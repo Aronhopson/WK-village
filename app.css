@@ -1,0 +1,59 @@
+body{
+    background: pink;
+    font-family: "Nunito", sans-serif;
+}
+#mainNavbar .navbar-brand{
+color: red;
+font-size: 3rem;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+    font-size: 1.5rem;
+    }
+    
+#mainNavbar .nav-link:hover{
+    color: red;
+    background: purple;
+    }
+    
+#mainNavbar .navbar-brand{
+    color: red;
+    }
+
+    /*movies*/
+
+    var movie = [{
+        title : "wer",
+        watch : false,
+        rate: 5
+        },
+        {
+         title : "tu",
+        watch : true,
+        rate: 1
+            }]
+            movie.forEach(function(movie)  {
+                var result = "you have";
+                if(movie.watch){
+                    result += "wactched";
+                } else{
+                    result += "not watched";
+                }
+                result += "\"" + movie.title +"\"-";
+                result += "\"" + movie.rate +"star";
+                console.log(result)
+
+            })
+
+        
+          var allow = prompt("whats you age");
+          var age = (allow);
+
+          if (age<18){
+            console.log("get out");
+          }
+          {else if (age<21)
+            console.log("its ok");
+          }
+          else{("wel come");}
